@@ -55,7 +55,7 @@ namespace Banana {
 		    });
 
 		    installBepButton.clicked.connect (() => {
-                print ("Downloading BepInEx to be implemented soon");
+                warning ("Unimplemented - automatic BepInEx installation to be done soon");
 		    });
 
             onboardingHeaderSkip.clicked.connect (() => {
