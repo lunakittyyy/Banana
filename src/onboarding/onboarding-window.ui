@@ -36,7 +36,7 @@
                   <property name="margin-top">85</property>
                   <child>
                     <object class="GtkLabel" id="headerLabel">
-                      <property name="label">Choose game executable</property>
+                      <property name="label">Choose game directory</property>
                       <style>
                         <class name="title-1"/>
                       </style>
@@ -44,7 +44,7 @@
                   </child>
                   <child>
                     <object class="GtkLabel" id="subtitleLabel">
-                      <property name="label">Select a Unity game executable to install plugins onto.</property>
+                      <property name="label">Select a Unity game directory to install plugins onto.</property>
                     </object>
                   </child>
                   <child>
@@ -85,7 +85,7 @@
                   </child>
                   <child>
                     <object class="GtkLabel" id="subtitleBepLabel">
-                      <property name="label">Install the BepInEx plugin loader onto this game to load plugins.</property>
+                      <property name="label">Install the BepInEx plugin loader onto this game to load plugins and mods.</property>
                     </object>
                   </child>
                   <child>

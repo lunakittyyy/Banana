@@ -52,11 +52,7 @@ namespace Banana {
 			    openFileDialog ();
 		    });
 		    installBepButton.clicked.connect (() => {
-			    var bepinURL = File.new_for_uri ("https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_unix_5.4.22.0.zip");
-			    File local_file = File.new_for_path(folder.get_path () + "/bepinex.zip");
-			    try {
-			        bepinURL.copy(local_file);
-                } catch (Error err) { print (err.message); }
+                print ("Downloading BepInEx to be implemented soon");
 		    });
 		    onboardingHeaderNext.clicked.connect (() => {
 			    switch (onboardStack.get_visible_child_name ()) {
