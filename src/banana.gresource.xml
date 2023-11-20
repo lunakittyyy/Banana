@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/lunakittyyy/Banana">
+    <file preprocess="xml-stripblanks">main-window.ui</file>
+    <file preprocess="xml-stripblanks">onboarding/onboarding-window.ui</file>
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+  </gresource>
+</gresources>

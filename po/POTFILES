@@ -1,0 +1,6 @@
+data/com.lunakittyyy.Banana.desktop.in
+data/com.lunakittyyy.Banana.metainfo.xml.in
+data/com.lunakittyyy.Banana.gschema.xml
+src/main.vala
+src/window.vala
+src/window.ui
