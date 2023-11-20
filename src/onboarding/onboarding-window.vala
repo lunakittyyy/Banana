@@ -51,7 +51,7 @@ namespace Banana {
             onboardingHeaderNext.set_sensitive (false);
 
             chooseDirButton.clicked.connect (() => {
-			    openFileDialog ();
+			    openFileDialog.begin ();
 		    });
 
 		    installBepButton.clicked.connect (() => {
