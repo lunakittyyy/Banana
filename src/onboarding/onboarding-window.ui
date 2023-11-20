@@ -16,9 +16,17 @@
             <child type="end">
               <object class="GtkButton" id="onboardingHeaderNext">
                 <property name="label">Next</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
               </object>
             </child>
-          </object>
+            <child type="start">
+              <object class="GtkButton" id="onboardingHeaderSkip">
+                <property name="label">Skip</property>
+              </object>
+            </child>
+              </object>
         </child>
         <property name="content">
           <object class="GtkStack" id="onboardStack">
@@ -31,7 +39,7 @@
                 <object class="GtkBox" id="onboardChooseGameBox">
                   <property name="orientation">vertical</property>
                   <property name="spacing">20</property>
-                  <property name="margin-start">20</property>
+                  <property name="margin-start">35</property>
                   <property name="margin-end">20</property>
                   <property name="margin-top">85</property>
                   <child>
@@ -49,7 +57,7 @@
                   </child>
                   <child>
                     <object class="GtkBox" id="onboardButtonsBox">
-                    <property name="margin-start">180</property>
+                    <property name="margin-start">170</property>
                       <child>
                         <object class="GtkButton" id="chooseDirButton">
                           <property name="label">Open file...</property>

@@ -24,6 +24,7 @@ namespace Banana {
         [GtkChild] private unowned Gtk.Button chooseDirButton;
         [GtkChild] private unowned Gtk.Button onboardingHeaderNext;
         [GtkChild] private unowned Gtk.Button installBepButton;
+        [GtkChild] private unowned Gtk.Button onboardingHeaderSkip;
         [GtkChild] private unowned Adw.HeaderBar header_bar;
         [GtkChild] private unowned Gtk.Stack onboardStack;
         public File folder;
@@ -48,12 +49,19 @@ namespace Banana {
         construct {
             onboardStack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
             onboardingHeaderNext.set_sensitive (false);
+
             chooseDirButton.clicked.connect (() => {
 			    openFileDialog ();
 		    });
+
 		    installBepButton.clicked.connect (() => {
                 print ("Downloading BepInEx to be implemented soon");
 		    });
+
+            onboardingHeaderSkip.clicked.connect (() => {
+               close ();
+            });
+
 		    onboardingHeaderNext.clicked.connect (() => {
 			    switch (onboardStack.get_visible_child_name ()) {
                     case "chooseGame":
