@@ -22,7 +22,7 @@
         </child>
         <property name="content">
           <object class="GtkLabel" id="label">
-            <property name="label">placeholder</property>
+            <property name="label">When completed, this interface will list the installed mods and allow a user to manage them.</property>
           </object>
         </property>
       </object>
