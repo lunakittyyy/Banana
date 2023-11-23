@@ -38,7 +38,7 @@ namespace Banana {
                 var fileDialog = new Gtk.FileDialog ();
                 folder = yield fileDialog.select_folder (this, Cancellable.get_current ());
                 onGameChosen (folder);
-            } catch (Error err) { }
+            } catch (Error err) {warning (err.message);}
         }
 
         private void onGameChosen (File folder) {

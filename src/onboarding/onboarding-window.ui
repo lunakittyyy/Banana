@@ -10,7 +10,7 @@
     <property name="default-height">300</property>
     <property name="content">
       <object class="AdwToolbarView">
-        <child type="bottom">
+        <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
             <property name="show-title">false</property>
             <child type="end">
@@ -41,7 +41,7 @@
                   <property name="spacing">20</property>
                   <property name="margin-start">35</property>
                   <property name="margin-end">20</property>
-                  <property name="margin-top">85</property>
+                  <property name="margin-top">45</property>
                   <child>
                     <object class="GtkLabel" id="headerLabel">
                       <property name="label">Choose game directory</property>
@@ -84,7 +84,7 @@
                   <property name="spacing">20</property>
                   <property name="margin-start">25</property>
                   <property name="margin-end">20</property>
-                  <property name="margin-top">85</property>
+                  <property name="margin-top">45</property>
                   <child>
                     <object class="GtkLabel" id="headerBepLabel">
                       <property name="label">Install BepInEx</property>
